@@ -18,8 +18,9 @@ http://docs.openstack.org/user-guide/common/cli_install_openstack_command_line_c
 % sudo apt-get install python-novaclient python-glanceclient
 
 Download, convert, and upload again with client commands like :
-% nova image-list
+% nova image-show docker-zeroconf-image
      (find image/snapshot id)
-% glance image-download --file my.test.raw ba2fb964-1a2e-4dc0-a756-7d1e53d0c209
-% qemu-img convert -O qcow2 my.test.raw my.test.qcow
-% glance image-create --name daues-qcow2-test  --disk-format qcow2  --file ./my.test.qcow  --container-format bare
+% cd <20GB+PARTITION>
+% glance image-download --file ubuntu-qserv.raw <IMAGE-ID>
+% qemu-img convert -O qcow2 ubuntu-qserv.raw ubuntu-qserv.qcow
+% glance image-create --name ubuntu-qserv  --disk-format qcow2  --file ./ubuntu-qserv.qcow  --container-format bare
