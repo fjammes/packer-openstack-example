@@ -11,13 +11,20 @@ Here we use packer 0.8.6.
 
 # Convert to QCOW2
 
-Install nova api:
-http://docs.openstack.org/user-guide/common/cli_install_openstack_command_line_clients.html
+## Install nova api:
 
-# example for debian-like systems
+See http://docs.openstack.org/user-guide/common/cli_install_openstack_command_line_clients.html
+
+### example for debian-like systems
+
 % sudo apt-get install python-novaclient python-glanceclient
 
-Download, convert, and upload again with client commands like :
+## Install qemu-img
+
+## Download, convert, and upload again
+
+Use client commands like :
+
 % nova image-show docker-zeroconf-image
      (find image/snapshot id)
 % cd <20GB+PARTITION>
