@@ -5,7 +5,7 @@
 	  "flavor": "m1.small",
       "ssh_username": "ubuntu",
       "region": "RegionOne",
-      "image_name": "docker-zeroconf-image",
+      "image_name": "ubuntu-docker-image",
       "source_image": "f9fb62a6-ad07-4df9-96d4-f316fed2a087",
 	  "networks": "fc77a88d-a9fb-47bb-a65d-39d1be7a7174",
 	  "floating_ip_pool": "ext-net",

@@ -31,7 +31,7 @@ Use client commands like :
 % nova image-show docker-zeroconf-image
      (find image/snapshot id)
 % cd <20GB+PARTITION>
-% glance image-download --file ubuntu-qserv.raw <IMAGE-ID>
-% qemu-img convert -O qcow2 ubuntu-qserv.raw ubuntu-qserv.qcow
-% glance image-create --name ubuntu-qserv  --disk-format qcow2  --file ./ubuntu-qserv.qcow  --container-format bare
+% glance image-download --file img.raw <IMAGE-ID>
+% qemu-img convert -O qcow2 img.raw img.qcow
+% glance image-create --name ubuntu-15.04-qserv  --disk-format qcow2  --file ./img.qcow  --container-format bare
 ```
