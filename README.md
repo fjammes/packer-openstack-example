@@ -12,6 +12,9 @@ Here we use packer 0.8.6.
 # Convert to QCOW2
 
 Install nova api:
+http://docs.openstack.org/user-guide/common/cli_install_openstack_command_line_clients.html
+
+# example for debian-like systems
 % sudo apt-get install python-novaclient python-glanceclient
 
 Download, convert, and upload again with client commands like :
