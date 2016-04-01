@@ -1,0 +1,20 @@
+{
+  "builders": [
+    {
+      "type": "openstack",
+	  "flavor": "m1.small",
+      "ssh_username": "ubuntu",
+      "region": "RegionOne",
+      "image_name": "packer-ubuntu-15.04-docker",
+      "source_image": "ca70466d-5043-4cb6-a779-8a2b1cf303a4",
+	  "networks": "079bde3e-af21-4b9b-a934-b3286fdc9d07",
+	  "floating_ip_pool": "ext-net",
+	  "use_floating_ip": true,
+	  "security_groups": ["default"]
+    }
+  ],
+   "provisioners": [{
+    "type": "shell",
+    "script": "setup.sh"
+  }]
+}

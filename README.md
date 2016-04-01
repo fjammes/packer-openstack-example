@@ -8,7 +8,8 @@ In this example, we use packer 0.8.6.
 # Build image
 
 ```
-% packer build packer_template.json
+# Template for NCSA Openstack platform
+% packer build packer_template.ncsa.json
 ```
 
 # Convert to QCOW2
